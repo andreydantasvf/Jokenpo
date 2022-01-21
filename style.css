@@ -6,8 +6,10 @@
 
 section {
     height: 100vh;
+    width: 100%;
     background: rgb(39, 41, 68);
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .score {
@@ -147,5 +149,24 @@ div.fadeIn {
     }
     100% {
         transform: translateY(0px)
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        text-align: center
+    }
+
+    .match {
+        max-width: 100%;
+    }
+
+    .hands img {
+        width: 50vw;
+    }
+
+    .options {
+        flex-direction: column;
+        gap: 20px;
     }
 }
